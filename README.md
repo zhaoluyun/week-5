@@ -27,3 +27,6 @@
 - [Lab 2](lab/lab2/)
 
 ## Homework Assignment (Due: Sunday, February 21)
+
+- Complete [Labs](lab)
+- Complete [Assignment](assignment)
