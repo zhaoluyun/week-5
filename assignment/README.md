@@ -18,7 +18,7 @@ works properly. It should!
 
 #### Task 2
 
-In you index.html file, add four elements:
+In your index.html file, add four elements:
 
 1. Text input field, which will represent the URL of your dataset
 2. Text input field, which will represent the latitude key in your data
