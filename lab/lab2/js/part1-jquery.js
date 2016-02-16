@@ -14,7 +14,7 @@ var Stamen_TonerLite = L.tileLayer('http://stamen-tiles-{s}.a.ssl.fastly.net/ton
 }).addTo(map);
 
 /* =====================
-  Lab 2, Part 1 - jQuery Selectors
+  Lab 2, Part 1 - jQuery
 
   In this course, we've set our focus on HTML, CSS, & Javascript as they are useful in the construction
   of mapping applications. One thing that isn't yet clear is how to handle user input. This is difficult
