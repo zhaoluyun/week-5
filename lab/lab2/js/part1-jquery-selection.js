@@ -55,6 +55,7 @@ var Stamen_TonerLite = L.tileLayer('http://stamen-tiles-{s}.a.ssl.fastly.net/ton
   help of jQuery selectors and associated methods for querying the DOM. The method you'll use again
   and again on this lab is jQuery's `val`. With no arguments, it queries an input value. Provided
   a value as an argument, it will actually set that value in the HTML DOM.
+
   Example:
     Reading: $(someSelector).val();
     Writing: $(someSelector).val(valueToSet);
@@ -86,12 +87,12 @@ var Stamen_TonerLite = L.tileLayer('http://stamen-tiles-{s}.a.ssl.fastly.net/ton
     Write the code necessary to read from your input form and return a javascript object (with keys
     to clarify the meaning of each value) that has all the data that's stored in your form.
 
-  // OPTIONAL, STRETCH GOALS
-  Task 4: Use default values
+  // STRETCH GOALS
+  Task 4: Use default values - OPTIONAL
     We don't want the application to crash if our user fails to enter values for every field. Add
     whatever logic is necessary to set default values if a field is empty.
 
-  Task 5: Parameterize `fillOutForm` (make it accept parameters/arguments)
+  Task 5: Parameterize `fillOutForm` (make it accept parameters/arguments) - OPTIONAL
     At this point, we have an object which corresponds to a[n] (at least partially) filled out form.
     That being so, we should be able to rewrite `fillOutForm` so that it accepts, as an argument,
     one of those objects and properly fills out the form to match the values of that object. Try to

@@ -67,8 +67,8 @@ $('p').click(encourage);
     The event you register should fire when the button added in Task 3 is clicked. It should apply
     the filter you wrote to the data you've downloaded and plot the appropriate markers.
 
-  // OPTIONAL, STRETCH GOALS
-  Task 5: Experiments
+  // STRETCH GOALS
+  Task 5: Experiments - OPTIONAL
     - Try to use an HTML5 color input (refer to lab2 part1) to color a Leaflet.CircleMarker
     - Add logic to tear markers down before adding more to the page
     - Instead of a `click` event, try binding to `change` events on input fields (https://api.jquery.com/change/)
