@@ -87,7 +87,6 @@ var Stamen_TonerLite = L.tileLayer('http://stamen-tiles-{s}.a.ssl.fastly.net/ton
     properties of people, the name might be 'bob' and the favorite color could be green (hint: you'll
     want to get formatting exactly right to set a color field; experiment in the console to see what
     the color you'll specify should look like).
-    Do all of this work in the body of the function `fillOutForm`
 
   Task 3: Getting (reading) input values
     Write the code necessary to read from your input form and return a javascript object (with keys
@@ -108,7 +107,7 @@ var Stamen_TonerLite = L.tileLayer('http://stamen-tiles-{s}.a.ssl.fastly.net/ton
 
     Setting the property's value is just slightly more involved:
     $('#someInput').prop('disabled', false); -> <input id="someInput" type="number">
-    $('#someInput').prop('disabled', true); -> <input id="someInput" type="number" disabled>
+    $('#someInput').prop('disabled', true);  -> <input id="someInput" type="number" disabled>
 
     Enable *all* fields on this form.
 
@@ -139,13 +138,14 @@ var Stamen_TonerLite = L.tileLayer('http://stamen-tiles-{s}.a.ssl.fastly.net/ton
     a divIcon, you should be able to grab it by reference to its class: 'leaflet-marker-icon'. So,
     in jQuery, $('.leaflet-marker-icon').
 
-  Task 9: Parameterize `fillOutForm` (make it accept parameters/arguments) - OPTIONAL
-    At this point, we have an object which corresponds to a[n] (at least partially) filled out form.
-    That being so, we should be able to rewrite `fillOutForm` so that it accepts, as an argument,
+  Task 9: Make a parametric function (make it accept parameters/arguments) to fill the form out
+    At this point, we have an object which corresponds to a (at least partially) filled out form.
+    That being so, we should be able to write a function that accepts, as an argument,
     one of those objects and properly fills out the form to match the values of that object. Try to
-    update the code below so that an object entered into `fillOutForm` is stored on the HTML and
-    fully reconstituted by `readFromForm`. Use `_.isEqual` to make sure the object you feed in is
-    the same as the one you read back out.
+    update the code below so that an object entered into your form-filling function is stored on the
+    HTML and fully reconstituted by the code you've written to read from the form.
+
+    Use `_.isEqual` to make sure the object you feed in is the same as the one you read back out.
 ===================== */
 
 $(document).ready(function() {
