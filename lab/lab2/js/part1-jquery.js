@@ -148,18 +148,6 @@ var Stamen_TonerLite = L.tileLayer('http://stamen-tiles-{s}.a.ssl.fastly.net/ton
     the same as the one you read back out.
 ===================== */
 
-var fillOutForm = function() {
- // Fill the form out here
-};
-
-var readFromForm = function() {
- // Return an object from within this function
- return {};
-};
-
-/* =====================
-  NOTE: no arguments are provided to these functions
-===================== */
-fillOutForm();
-console.log(readFromForm());
-
+$(document).ready(function() {
+  // Do your stuff here
+});
