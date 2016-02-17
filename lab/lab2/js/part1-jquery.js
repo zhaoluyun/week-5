@@ -147,7 +147,130 @@ var Stamen_TonerLite = L.tileLayer('http://stamen-tiles-{s}.a.ssl.fastly.net/ton
 
     Use `_.isEqual` to make sure the object you feed in is the same as the one you read back out.
 ===================== */
-
 $(document).ready(function() {
-  // Do your stuff here
+
+// task 1
+  $('#main-heading').text("Person");
+  $('#text-label1').text("Position");
+  $('#text-label2').text("Name");
+  $('#text-label3').text("Address");
+  $('#number-label').text("Age");
+  $('#checkbox-label1').text("Is Male");
+  $('#checkbox-label2').text("Is Married");
+  $('#color-label').text("Favorite Color");
+// task 2
+  $('#text-input1').val("Boss");
+  $('#text-input2').val("Bob");
+  $('#text-input3').val("235 16th Street");
+  $('#numeric-input').val(40);
+  $('#cbox-input1').prop("checked",true);
+  $('#cbox-input2').prop("checked",true);
+  $('#color-input').val('#f1625d');
+
+// task 3
+var person = {
+  position:$('#text-input1').val(),
+  name: $('#text-input2').val(),
+  address: $('#text-input3').val(),
+  age: $('#numeric-input').val(),
+  gender: $('#cbox-input1').prop("checked"),
+  married: $('#cbox-input2').prop("checked"),
+  color: $('#color-input').val(),
+};
+
+console.log(person);
+// task 4
+$('#text-input1').prop('disabled', false);
+$('#text-input2').prop('disabled', false);
+$('#text-input3').prop('disabled', false);
+$('#numeric-input').prop('disabled', false);
+$('#cbox-input1').prop('disabled', false);
+$('#cbox-input2').prop('disabled', false);
+$('#color-input').prop('disabled', false);
+
+// task 5
+$( "button" ).click(function() {
+  var person = {
+    position:$('#text-input1').val(),
+    name: $('#text-input2').val(),
+    address: $('#text-input3').val(),
+    age: $('#numeric-input').val(),
+    gender: $('#cbox-input1').prop("checked"),
+    married: $('#cbox-input2').prop("checked"),
+    color: $('#color-input').val(),
+  };
+  console.log(person);
+});
+
+// task 6
+
+ $('#main-heading').text("Position");
+ $('#text-label1').text("Description");
+ $('#text-input1').val('');
+ $('#text-label2').text("Lat");
+ $('#text-label3').text("Lng");
+ $('#text-input2').attr('type', 'number');
+ $('#text-input3').attr('type', 'number');
+ $('#color-label').text("Color");
+ $('#number-label').text("NaN");
+ $('#numeric-input').val('');
+ $('#checkbox-label1').text("NaN");
+ $('#checkbox-label2').text("NaN");
+
+
+ // task 6&7
+
+$( "button" ).click(function() {
+  if ($('#text-input1').val()==='') {$('#text-input1').val("city hall");}
+  if ($('#text-input2').val()==='') {$('#text-input2').val(39.9522);}
+  if ($('#text-input3').val()==='') {$('#text-input3').val(-75.1639);}
+
+  L.circleMarker([$('#text-input2').val(),$('#text-input3').val()],{color:$('#color-input').val()}).bindPopup($('#text-input1').val()).addTo(map);
+
+});
+
+// Task 8
+var myIcon = L.divIcon({
+  className: 'leaflet-marker-icon'
+});
+$( "button" ).click(function() {
+L.marker([$('#text-input2').val(),$('#text-input3').val()],{icon: myIcon}).addTo(map);
+});
+
+
+// Task 9
+
+var meyerson = {
+  Description: 'Meyerson',
+  Lat: '39.952230',
+  Lng: '-75.192614',
+};
+
+
+var fill = function(write) {
+$('#text-input1').val(write.Description);
+$('#text-input2').val(write.Lat);
+$('#text-input3').val(write.Lng);
+
+var read = {
+  Description: $('#text-input1').val(),
+  Lat: $('#text-input2').val(),
+  Lng: $('#text-input3').val(),
+};
+console.log(_.isEqual(write, read));
+};
+
+fill(meyerson);
+
+$( "button" ).click(function() {
+  meyerson = {
+    Description:$('#text-input1').val(),
+    Lat: $('#text-input2').val(),
+    Lng: $('#text-input3').val(),
+  };
+  console.log(meyerson);
+});
+
+
+
 });

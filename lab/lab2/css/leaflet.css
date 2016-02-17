@@ -24,7 +24,7 @@
 	touch-action: none;
 	}
 .leaflet-tile,
-.leaflet-marker-icon,
+.leaflet-marker-icon {background-color:#8dbeb1;length:20px; width:20px;border-radius:10px};
 .leaflet-marker-shadow {
 	-webkit-user-select: none;
 	   -moz-user-select: none;
